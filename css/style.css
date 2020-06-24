@@ -1,0 +1,175 @@
+meta @charset;
+     body{
+            background-color: #424452;
+            color: #fff;
+            font-family: "Montserrat", arial, sans-serif;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .bg{
+            width: 100%;
+            height: 100vh;
+            display: block;
+            background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)) ;
+            position: fixed;
+            left: 0;
+            z-index: 998;
+        }
+        .form {
+            display: none;
+        }
+
+        .showing {
+            display: block;
+        }
+
+        .bgImage {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            animation: fadeIn 0.5s linear;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+            } to{
+                opacity: 1;
+            }
+        }  
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cont {
+            position: relative;
+            left: 50%;
+            top: 150px;
+            transform: translateX(-50%);
+        }
+
+        input[type=text] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0px;
+            box-shadow: none;
+            outline-style: none;
+            background: none;
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+            font-family: Arial;
+            outline: 0;
+            box-sizing: content-box;
+        }
+        input{
+            text-shadow: none;
+            cursor: text;
+            margin: 0em;
+            padding: 1px;
+            border-width: 2px;
+            border-style: none; /*이거 해줘야 음각 박스 사라짐!!*/
+            font-size: 40px;
+            color: #fff;
+        }
+        input::placeholder{
+            color: #fff;
+            font-size: 40px;
+        }
+        button {
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        ol{
+            padding-top: 25px;
+        }
+        li {
+            font-size: 25px;
+            font-weight: 100;
+            line-height: 35px;
+            text-indent: 20px;
+            color: #fff;
+        }
+
+        .js-title {
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.5;
+            position: fixed;
+            right: 50px;
+            bottom: 0px;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 2px;                
+        }
+
+        .js-weather {
+            font-size: 18px;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            z-index: 999;
+            color: #fff;
+            font-weight: bold;
+        }
+        .js-toDoList {
+            height: 470px;
+            width: 500px;
+            margin: auto;
+        }
+        .js-form{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .js-form input[type=text]{
+            width: 100%;
+            text-align: center;
+            font: 60px/80px "Montserrat", arial, sans-serif;
+            letter-spacing: -3px; 
+        }
+.js-toDoForm{
+    text-align: center;
+}
+        .js-toDoForm input[type=text]{
+            width: 700px;
+            height: 50px;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            font-size: 40px;
+        }
+        .js-toDoForm input:focus{
+            border-bottom: 2px solid #d3d3d3;
+        }
+        h4{
+            font-size: 40px;
+            font-weight: 100;
+            letter-spacing: -2px;
+            text-align: center;
+            color: #fff;
+        }
+/*        로고*/
+        h1{
+            position: fixed;
+            left: 140px;
+            top: 80px;
+        }
+        h1>img{
+            display: block;
+            width: 100px;
+        }
+        p{
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+        }
